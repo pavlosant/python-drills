@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ontology name="demo-diseases">
+  <term id="DIS:0001">
+    <label>disease</label>
+  </term>
+  <term id="DIS:0002">
+    <label>respiratory disease</label>
+    <synonym>lung disease</synonym>
+    <synonym>pulmonary disease</synonym>
+    <parent ref="DIS:0001"/>
+  </term>
+  <term id="DIS:0003">
+    <label>asthma</label>
+    <synonym>bronchial asthma</synonym>
+    <parent ref="DIS:0002"/>
+  </term>
+  <term id="DIS:0004">
+    <label>chronic obstructive pulmonary disease</label>
+    <synonym>COPD</synonym>
+    <synonym>chronic bronchitis</synonym>
+    <parent ref="DIS:0002"/>
+  </term>
+  <term id="DIS:0005">
+    <label>metabolic disease</label>
+    <synonym>metabolic disorder</synonym>
+    <parent ref="DIS:0001"/>
+  </term>
+  <term id="DIS:0006">
+    <label>diabetes mellitus</label>
+    <synonym>diabetes</synonym>
+    <synonym>DM</synonym>
+    <parent ref="DIS:0005"/>
+  </term>
+  <term id="DIS:0007">
+    <label>type 2 diabetes</label>
+    <synonym>T2D</synonym>
+    <synonym>NIDDM</synonym>
+    <synonym>adult-onset diabetes</synonym>
+    <parent ref="DIS:0006"/>
+  </term>
+  <term id="DIS:0008">
+    <label>type 1 diabetes</label>
+    <synonym>T1D</synonym>
+    <synonym>IDDM</synonym>
+    <synonym>juvenile diabetes</synonym>
+    <parent ref="DIS:0006"/>
+  </term>
+  <term id="DIS:0009">
+    <label>cancer</label>
+    <synonym>neoplasm</synonym>
+    <synonym>malignancy</synonym>
+    <synonym>tumour</synonym>
+    <parent ref="DIS:0001"/>
+  </term>
+  <term id="DIS:0010">
+    <label>lung cancer</label>
+    <synonym>lung carcinoma</synonym>
+    <synonym>pulmonary neoplasm</synonym>
+    <parent ref="DIS:0002"/>
+    <parent ref="DIS:0009"/>
+  </term>
+  <term id="DIS:0011">
+    <label>breast cancer</label>
+    <synonym>breast carcinoma</synonym>
+    <synonym>mammary cancer</synonym>
+    <parent ref="DIS:0009"/>
+  </term>
+  <term id="DIS:0012">
+    <label>obesity</label>
+    <synonym>adiposity</synonym>
+    <parent ref="DIS:0005"/>
+  </term>
+  <term id="DIS:0013">
+    <label>cardiovascular disease</label>
+    <synonym>heart disease</synonym>
+    <synonym>CVD</synonym>
+    <parent ref="DIS:0001"/>
+  </term>
+  <term id="DIS:0014">
+    <label>hypertension</label>
+    <synonym>high blood pressure</synonym>
+    <synonym>HTN</synonym>
+    <parent ref="DIS:0013"/>
+  </term>
+  <term id="DIS:0015">
+    <label>myocardial infarction</label>
+    <synonym>heart attack</synonym>
+    <synonym>MI</synonym>
+    <parent ref="DIS:0013"/>
+  </term>
+  <term id="DIS:0016">
+    <label>stroke</label>
+    <synonym>cerebrovascular accident</synonym>
+    <synonym>CVA</synonym>
+    <parent ref="DIS:0013"/>
+  </term>
+</ontology>

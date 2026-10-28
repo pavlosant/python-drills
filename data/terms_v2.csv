@@ -1,0 +1,17 @@
+id,label,synonyms,parent_ids,category
+DIS:0001,disease,,,root
+DIS:0002,respiratory disease,lung disease|pulmonary disease,DIS:0001,respiratory
+DIS:0003,asthma,bronchial asthma,DIS:0002,respiratory
+DIS:0004,chronic obstructive pulmonary disease,COPD|chronic bronchitis,DIS:0002,respiratory
+DIS:0005,metabolic disease,metabolic disorder,DIS:0001,metabolic
+DIS:0006,diabetes mellitus,diabetes|DM,DIS:0005,metabolic
+DIS:0007,type 2 diabetes,T2D|NIDDM|adult-onset diabetes|type ii diabetes,DIS:0006,metabolic
+DIS:0008,type 1 diabetes,T1D|IDDM|juvenile diabetes,DIS:0006,metabolic
+DIS:0009,cancer,neoplasm|malignancy|tumour,DIS:0001,cancer
+DIS:0010,lung cancer,lung carcinoma|pulmonary neoplasm,DIS:0002|DIS:0009,cancer
+DIS:0011,breast cancer,breast carcinoma|mammary cancer,DIS:0009,cancer
+DIS:0013,cardiovascular disease,heart disease|CVD,DIS:0001,cardiovascular
+DIS:0014,arterial hypertension,high blood pressure|HTN,DIS:0013,cardiovascular
+DIS:0015,myocardial infarction,heart attack|MI,DIS:0013,cardiovascular
+DIS:0016,stroke,cerebrovascular accident|CVA,DIS:0013,cardiovascular
+DIS:0017,pneumonia,lung infection,DIS:0002,respiratory

@@ -1,0 +1,137 @@
+format-version: 1.2
+ontology: demo-diseases
+
+[Term]
+id: DIS:0001
+name: disease
+def: "A demo entry for disease." [DEMO:curated]
+
+[Term]
+id: DIS:0002
+name: respiratory disease
+def: "A demo entry for respiratory disease." [DEMO:curated]
+synonym: "lung disease" EXACT []
+synonym: "pulmonary disease" EXACT []
+is_a: DIS:0001 ! disease
+
+[Term]
+id: DIS:0003
+name: asthma
+def: "A demo entry for asthma." [DEMO:curated]
+synonym: "bronchial asthma" EXACT []
+is_a: DIS:0002 ! respiratory disease
+
+[Term]
+id: DIS:0004
+name: chronic obstructive pulmonary disease
+def: "A demo entry for chronic obstructive pulmonary disease." [DEMO:curated]
+synonym: "COPD" EXACT []
+synonym: "chronic bronchitis" EXACT []
+is_a: DIS:0002 ! respiratory disease
+
+[Term]
+id: DIS:0005
+name: metabolic disease
+def: "A demo entry for metabolic disease." [DEMO:curated]
+synonym: "metabolic disorder" EXACT []
+is_a: DIS:0001 ! disease
+
+[Term]
+id: DIS:0006
+name: diabetes mellitus
+def: "A demo entry for diabetes mellitus." [DEMO:curated]
+synonym: "diabetes" EXACT []
+synonym: "DM" EXACT []
+is_a: DIS:0005 ! metabolic disease
+
+[Term]
+id: DIS:0007
+name: type 2 diabetes
+def: "A demo entry for type 2 diabetes." [DEMO:curated]
+synonym: "T2D" EXACT []
+synonym: "NIDDM" EXACT []
+synonym: "adult-onset diabetes" EXACT []
+is_a: DIS:0006 ! diabetes mellitus
+
+[Term]
+id: DIS:0008
+name: type 1 diabetes
+def: "A demo entry for type 1 diabetes." [DEMO:curated]
+synonym: "T1D" EXACT []
+synonym: "IDDM" EXACT []
+synonym: "juvenile diabetes" EXACT []
+is_a: DIS:0006 ! diabetes mellitus
+
+[Term]
+id: DIS:0009
+name: cancer
+def: "A demo entry for cancer." [DEMO:curated]
+synonym: "neoplasm" EXACT []
+synonym: "malignancy" EXACT []
+synonym: "tumour" EXACT []
+is_a: DIS:0001 ! disease
+
+[Term]
+id: DIS:0010
+name: lung cancer
+def: "A demo entry for lung cancer." [DEMO:curated]
+synonym: "lung carcinoma" EXACT []
+synonym: "pulmonary neoplasm" EXACT []
+is_a: DIS:0002 ! respiratory disease
+is_a: DIS:0009 ! cancer
+
+[Term]
+id: DIS:0011
+name: breast cancer
+def: "A demo entry for breast cancer." [DEMO:curated]
+synonym: "breast carcinoma" EXACT []
+synonym: "mammary cancer" EXACT []
+is_a: DIS:0009 ! cancer
+
+[Term]
+id: DIS:0012
+name: obesity
+def: "A demo entry for obesity." [DEMO:curated]
+synonym: "adiposity" EXACT []
+is_a: DIS:0005 ! metabolic disease
+
+[Term]
+id: DIS:0013
+name: cardiovascular disease
+def: "A demo entry for cardiovascular disease." [DEMO:curated]
+synonym: "heart disease" EXACT []
+synonym: "CVD" EXACT []
+is_a: DIS:0001 ! disease
+
+[Term]
+id: DIS:0014
+name: hypertension
+def: "A demo entry for hypertension." [DEMO:curated]
+synonym: "high blood pressure" EXACT []
+synonym: "HTN" EXACT []
+is_a: DIS:0013 ! cardiovascular disease
+
+[Term]
+id: DIS:0015
+name: myocardial infarction
+def: "A demo entry for myocardial infarction." [DEMO:curated]
+synonym: "heart attack" EXACT []
+synonym: "MI" EXACT []
+is_a: DIS:0013 ! cardiovascular disease
+
+[Term]
+id: DIS:0016
+name: stroke
+def: "A demo entry for stroke." [DEMO:curated]
+synonym: "cerebrovascular accident" EXACT []
+synonym: "CVA" EXACT []
+is_a: DIS:0013 ! cardiovascular disease
+
+[Term]
+id: DIS:0099
+name: old retired term
+is_obsolete: true
+
+[Typedef]
+id: part_of
+name: part of

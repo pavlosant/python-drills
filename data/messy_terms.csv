@@ -1,0 +1,10 @@
+id,label,synonyms,parent_ids
+DIS:0001,disease,,
+dis:0002 ,Respiratory Disease,lung disease| Lung Disease |pulmonary disease,DIS:0001
+DIS:0003,asthma,bronchial asthma|Asthma|,DIS:0002
+DIS:0003,asthma duplicate,,DIS:0002
+DIS-0004,broken id term,,DIS:0001
+DIS:0005,,missing label,DIS:0001
+DIS:0006,diabetes mellitus,diabetes|DM|diabetes mellitus,DIS:0099
+DIS:0007,  type 2 diabetes ,T2D|NIDDM,DIS:0006
+DIS:12,short id,,DIS:0001
