@@ -1,8 +1,7 @@
 # Python interview drills (15 days x 30 minutes)
 
 Daily practice to get your Python fluent again before a live coding round. The exercises use an
-**ontology / vocabulary** theme (terms, synonyms, parent-child hierarchies) because that is what a
-DataOps role at a company like SciBite works with - but the skills (data structures, classes, tests,
+**ontology / vocabulary** theme (terms, synonyms, parent-child hierarchies)  but the skills (data structures, classes, tests,
 pandas, parsing, refactoring) are the general ones every Python screen tests.
 
 ## How to use this folder
